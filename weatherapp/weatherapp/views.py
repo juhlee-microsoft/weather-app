@@ -16,7 +16,7 @@ import urllib2
 # As the weather information is not changed much or quickly, it is not necessary to query often.
 #
 def get_weather():
-    url="http://api.openweathermap.org/data/2.5/forecast/city?id=4255818&APPID=54e5b332a6ac1a0c9d2f2677cd8b289e"
+    url="http://api.openweathermap.org/data/2.5/forecast?id=4255818&APPID=54e5b332a6ac1a0c9d2f2677cd8b289e"
     response = urllib2.urlopen(url).read()
     return response
 
